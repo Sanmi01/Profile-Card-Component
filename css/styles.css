@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+
+.pattern-top {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: -30%;
+}
+
+.pattern-top img,
+.pattern-bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card span {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.card span img {
+    width: 100%;
+    height: 35%;
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-img {
+    margin-top: 62px;
+    padding-bottom: 5px;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    border: 6px solid #fff;
+    z-index: 1;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-middle {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #5252527e;
+}
+
+.card-middle h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.card-middle h1 span,
+p {
+    position: relative;
+    color: #525252;
+    font-weight: 300;
+}
+
+.card-middle p {
+    font-size: 15px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.card-bottom h2 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.pattern-bottom {
+    height: 365px;
+    width: 466px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    z-index: -1;
+}
+
+@media (max-width: 870px) {
+    .pattern-top {
+        height: 400px;
+        width: 200px;
+    }
+
+    .pattern-bottom {
+        height: 200px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 360px) {
+    .pattern-top {
+        height: 400px;
+        width: 200px;
+    }
+
+    .pattern-bottom {
+        height: 300px;
+        width: 100px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
